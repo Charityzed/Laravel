@@ -39,7 +39,7 @@ class HomeController extends BaseController {
 
 		$users = User::all();
 
-		$message = "Data just in:";
+		$message = "Data in Database:";
 		return View::make('displaydata', ['users'=>$users, 'message'=>$message]);
 
 
