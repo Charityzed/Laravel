@@ -28,7 +28,7 @@ class HomeController extends BaseController {
          $user->fname=$data['fname'];
          $user->lname=$data['lname'];
          $user->email=$data['email'];
-         $user->password=$data['password'];
+         $user->password= Hash::make($data['password']);
 
          $user->save();
          return Redirect::to('/display');
@@ -40,7 +40,7 @@ class HomeController extends BaseController {
 		$users = User::all();
 
 		$message = "Data just in:";
-		return View::make('records', ['users'=>$users, 'message'=>$message]);
+		return View::make('displaydata', ['users'=>$users, 'message'=>$message]);
 
 
     }

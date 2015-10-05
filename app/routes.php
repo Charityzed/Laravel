@@ -17,8 +17,9 @@ Route::get('/', function()
 });
 
 Route::get('articles', function()
-{
+ {
 	return View::make('articles');
 });
 Route::post('/submit', 'Homecontroller@formprocess');
-Route::post('/display', 'Homecontroller@getdata');
+
+Route::get('/display', 'Homecontroller@getdata');

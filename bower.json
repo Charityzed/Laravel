@@ -1,0 +1,19 @@
+{
+  "name": "clinMobi",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Charityzed/Laravel",
+  "description": "firstinstance",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5"
+  }
+}

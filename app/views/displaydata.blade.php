@@ -1,6 +1,6 @@
-<ol>
+<ul class="list-group">
     <h2>{{$message}}</h2>
     @foreach($users as $user)
-        <li>{{$user->fullName}} is {{$user->fname}} is {{$user->lname}} and {{$user->emailhom}}</li>
+        <li class="list-group-item">{{$user->fullName}} is {{$user->fname}} is {{$user->lname}} and {{$user->emailhom}}</li>
     @endforeach
-</ol>
+</ul>

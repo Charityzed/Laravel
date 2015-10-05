@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Laravel PHP Framework</title>
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<script src="/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style type="text/javascript" src="/js/bootstrap.min.js"></style>
+
 	<style>
 		@import url(//fonts.googleapis.com/css?family=Lato:700);
 
@@ -60,7 +62,7 @@
         </div>
     <div class="form-control">
         {{Form::label('password', 'PASSWORD', array('class'=>'form-control'));}}
-        {{Form::text('password', '', array('class'=>'form-control input-md'));}}
+        {{Form::password('password', '', array('class'=>'form-control input-md'));}}
     </div>
 	<br>
     <div class="form-control">
